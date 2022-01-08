@@ -1,20 +1,25 @@
 'user strict'
 
 //-------------------------Task 1------------------
+let count = 0;
 let text = prompt ('Write some text');
 for (let i=0; i < text.length; i++) {
    if (text.charAt(i) == ' '){
-       console.log(text.charAt(i));
+      count ++;
    }
 }
+console.log(count);
 //-------------------------Task 2-------------------
 let text1 = prompt ('Ведіть Email');
-switch (text1) {
-    case  console.log(str.indexOf('@')):
-        break;
-    case console.log(str.length):
+let res = text1.indexOf('@');
+switch (res) {
+    case 0: 
+    case -1:
+    case text1.length-1:
+        console.log ('Не правильно введено')
         break;
     default:
+        console.log('Правильно');
         break;
 }
 //----------------------Task 3-----------------------
